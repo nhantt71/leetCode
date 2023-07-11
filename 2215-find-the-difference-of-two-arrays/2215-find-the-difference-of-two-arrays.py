@@ -7,9 +7,9 @@ class Solution(object):
         """
         nums1 = list(set(nums1))
         nums2 = list(set(nums2))
-        nums3 = [x for x in nums1 if x in nums2]
-        nums1 = [x for x in nums1 if x not in nums3]
-        nums2 = [x for x in nums2 if x not in nums3]
+        n = nums1
+        nums1 = [x for x in nums1 if x not in nums2]
+        nums2 = [x for x in nums2 if x not in n]
         answer = []
         answer.append(nums1)
         answer.append(nums2)
