@@ -18,8 +18,4 @@ class Solution(object):
                     col += 1
             col = 0
             i += 1
-        del n
-        del i
-        del col
-        del save
         return k
