@@ -11,8 +11,7 @@ var distanceBetweenBusStops = function(distance, start, destination) {
         start = destination;
         destination = temp;
     }
-    const arr1 = distance.slice(start, destination);
-    arr1.forEach((x) => flow += x);
+    distance.slice(start, destination).forEach((x) => flow += x);
     var reverse = distance.reduce((acc, cur) => {return acc + cur;});
     reverse = reverse - flow;
 
